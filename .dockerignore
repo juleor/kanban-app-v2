@@ -1,0 +1,10 @@
+# flyctl launch added from .gitignore
+**\.DS_Store
+**\DS_Store
+**\phase1.md
+**\phase2.md
+**\phase3.md
+**\README_RG.md
+**\main_test.go
+**\assignment-config.json
+fly.toml

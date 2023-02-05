@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{template "general/header"}}
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+<body class="bg-violet-300 h-max flex flex-col justify-center items-center pt-40">
+    <main class="w-96 bg-slate-100 px-6 py-8 flex flex-col rounded-xl shadow-md">
+        <section class="w-full">
+            <h1 class="text-3xl font-semibold text-center">Register</h1>
+        </section>
+
+        <section>
+            <form method="post" action="/register/process">
+                <article class="w-full flex flex-row flex-wrap justify-between mt-5">
+                    <label class="text-xl">Fullname</label>
+                    <input class="w-full text-lg pl-2 py-1 rounded-md mt-2 border-violet-600 border" type="text" placeholder="masukkan nama lengkap" name="fullname" required />
+                    <br />
+                </article>
+
+                <article class="w-full flex flex-row flex-wrap justify-between mt-3">
+                    <label class="text-xl">Email</label>
+                    <input class="w-full text-lg pl-2 py-1 rounded-md mt-2 border-violet-600 border" type="email" placeholder="masukkan email" name="email" required />
+                    <br />
+                </article>
+
+                <article class="w-full flex flex-row flex-wrap justify-between mt-3">
+                    <label class="text-xl">Password</label>
+                    <input class="w-full text-lg pl-2 py-1 rounded-md mt-2 border-violet-600 border" type="password" placeholder="masukkan password" name="password" required />
+                    <br />
+                </article>
+                
+                <article class="w-full flex flex-row flex-wrap justify-between mt-10 gap-4">
+                    <button class="flex-1 bg-violet-400 py-2 text-white font-semibold rounded-md cursor-pointer hover:bg-white hover:text-black hover:border hover:border-violet-600 active:text-white active:bg-violet-400" type="submit">Register</button>
+                    <a class="text-center flex-1 bg-white py-2 font-semibold rounded-md border border-violet-600 cursor-pointer hover:bg-violet-300 hover:text-white hover:border-white active:text-black active:bg-white active:border active:border-violet-600" href="/login">
+                        <div>
+                            Login
+                        </div></a>
+                </article>
+            </form>
+        </section>
+    </main>
+    <!-- TODO: answer here -->
+</body>
+</html>
